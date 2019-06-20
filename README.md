@@ -3,13 +3,29 @@ Purpose
 
 This project is for personal improvement and satisfaction. The most
 difficult step for (most) data scientists is model deployment. Flask
-makes that easy enough with their slick Python library.
+makes that easy enough with their slick Python library. In this project,
+we train a model with lightgbm and create an app that will predict a
+house selling price from the following columns:
 
-You will find two folders. One is for scripts, the other is for
-logs/object storage.
+-   LotArea
+-   Neighborhood
+-   Condition1
+-   Condition2
+-   OverallQual
+-   OverallCond
+-   YearBuilt
+-   SaleCondition
 
-The dataset used for prediction is the House Prices dataset you can find
-on Kaggle.
+There are hundreds (maybe thousands) of kernels on Kaggle that show you
+how to train a model that can predict housing prices on this exact
+dataset. However, none of them actually deploy the model so that one
+could query it and recieve a prediction. That is what this project does.
+It is a work in progress, and will be improved upon as I find new
+features to add.
+
+The requirements.txt file is pretty lightweight, and only includes the
+packages needed for this specific project (plus base Python) so feel
+free to copy the environment.
 
 Usage
 -----
